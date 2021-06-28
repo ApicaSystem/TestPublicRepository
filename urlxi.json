@@ -1,0 +1,36 @@
+{
+    "$schema": "file:///usr/local/lib/node_modules/url-xi/config/url-xi-schema-v1-0.json",
+    "name": "Ticketmonster Home Page",
+    "description": "Simple Scenario for the TM home page",
+    "baseURL": "http://ticketmonster.apicasystem.com",
+    "variables": [
+        {
+            "key": "dummyInput",
+            "type":"string",
+            "value":"foo",
+            "usage": "input"
+        }
+    ],
+    "steps": [
+        {
+            "name": "Home page",
+            "requests": [
+                {
+                    "name":"Home HTML",
+                    "config": {
+                        "url": "/ticket-monster"
+                    },
+                    "assertions": [
+                        {
+                            "description": "Dummy input should be foo",
+                            "failStep": true,
+                            "expression": "foo",
+                            "value": "{{dummyInput}}",
+                            "type": "value"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
