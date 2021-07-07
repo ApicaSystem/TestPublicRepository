@@ -1,7 +1,7 @@
 var start = Date.now() / 1000;
 var end = start + 1;
 var test = {
- "returncode": 0,
+ "returncode": 1,
  "stdout": "Javascript stdout",
  "stderr": "Javascript stderr",
  "start_time": start,
