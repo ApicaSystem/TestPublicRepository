@@ -18,15 +18,7 @@ describe('(Start Page)',() => {
     } while (browser == undefined && count < retries);
     });
 
-    test("Load Single Page",async() => {
-        try {
-            await page.goto("https://www.apica.io");
-        } catch (e) {
-            if (e instanceof puppeteer.errors.TimeoutError) {
-                throw new Error("Failed to load https://www.apica.io.");
-            }
-        }
-    });
+
 
     test("Load Second Page",async() => {
         try {
