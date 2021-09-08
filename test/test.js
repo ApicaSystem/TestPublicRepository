@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+jest.setTimeout(60000);
 
 describe('(Start Page)',() => {
     let pages;
