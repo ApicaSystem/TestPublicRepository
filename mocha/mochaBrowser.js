@@ -1,8 +1,8 @@
 var expect = require("chai").expect;
 var puppeteer = require('puppeteer');
 
-describe("one", function() {
-    it("one", async function() {
+describe("browser", function() {
+    it("browser", async function() {
     let pages;
     let page;
     let browser;
