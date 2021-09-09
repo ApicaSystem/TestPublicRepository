@@ -1,3 +1,4 @@
+var puppeteer = require('puppeteer');
 describe('(Next test)',() => {
     let pages;
     let page;
