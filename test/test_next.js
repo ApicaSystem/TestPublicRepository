@@ -1,6 +1,3 @@
-const puppeteer = require('puppeteer');
-jest.setTimeout(60000);
-
 describe('(Next test)',() => {
     let pages;
     let page;
