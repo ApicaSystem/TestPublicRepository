@@ -1,4 +1,6 @@
 var puppeteer = require('puppeteer');
+jest.setTimeout(60000);
+
 describe('(Next test)',() => {
     let pages;
     let page;
@@ -18,7 +20,7 @@ describe('(Next test)',() => {
 
     test("Next Tests",async() => {
         try {
-            await page.goto("https://www.reddit.com");
+            await page.goto("https://www.test.com");
         } catch (e) {
             if (e instanceof puppeteer.errors.TimeoutError) {
                 throw new Error("Failed to load https://www.reddit.com");
