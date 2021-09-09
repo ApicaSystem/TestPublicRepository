@@ -1,0 +1,15 @@
+var expect = require("chai").expect;
+var puppeteer = require('puppeteer');
+
+describe("one", function() {
+    it("one", async function() {
+    let pages;
+    let page;
+    let browser;
+    browser = await puppeteer.connect({browserURL: "http://localhost:9222/json",timeout:1000});
+    pages = await browser.pages();
+    page = pages[0];
+	page.goto("https://www.example.com").then(res => expect(1+1).to.equal(2));
+    await browser.close();
+   });
+});
