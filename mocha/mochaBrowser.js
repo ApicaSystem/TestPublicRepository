@@ -9,7 +9,8 @@ describe("browser", function() {
     browser = await puppeteer.connect({browserURL: "http://localhost:9222/json",timeout:5000});
     pages = await browser.pages();
     page = pages[0];
-	page.goto("https://www.example.com").then(res => expect(1+1).to.equal(2));
+    page.goto("https://www.example.com").then(res => expect(1+1).to.equal(2));
+    page.goto("https://www.reddit.com").then(res => expect(1+1).to.equal(2));
     await browser.close();
    });
 });
