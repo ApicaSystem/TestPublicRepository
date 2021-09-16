@@ -47,7 +47,7 @@
       "command": "verifyText",
       "target": "xpath=//p",
       "targets": [],
-      "value": "IANA"
+      "value": "Certain domains are set aside, and nominally registered to \“IANA\”, for specific policy or technical purposes"
     }]
   }],
   "suites": [{
