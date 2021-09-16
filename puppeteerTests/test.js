@@ -9,5 +9,5 @@ var pages;
     page = pages[0];
     await page.goto("https://www.reddit.com");
     await page.screenshot({ path: 'my_screenshot.png' })
-    await puppeteer.close();
+    await browser.close();
 })()
