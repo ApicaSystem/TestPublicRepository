@@ -8,6 +8,6 @@ var pages;
     pages = await browser.pages();
     page = pages[0];
     await page.goto("https://www.reddit.com");
-    await page.screenshot({ path: 'my_screenshot.png' })
+    await page.screenshot({ path: 'my_screenshot.png', fullPage: true });
     await browser.close();
 })()
