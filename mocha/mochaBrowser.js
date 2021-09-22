@@ -1,7 +1,7 @@
 var expect = require("chai").expect;
 var puppeteer = require('puppeteer');
 var options = {
-	executablePath: '/usr/lib/chromium/chrome',
+	executablePath: process.env.APICA_CHROME_PATH,
 	headless: false,
 	args: ['--disable-gpu', '--no-sandbox', '--remote-debugging-port=9222', '--disable-dev-shm-usage']
 }
